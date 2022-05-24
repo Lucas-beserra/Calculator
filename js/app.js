@@ -1,25 +1,25 @@
 function insert(num) {
-  var result = resultado.innerHTML
+  let result = resultPainel.innerHTML
 
-  resultado.innerHTML = result + num
+  resultPainel.innerHTML = result + num
 }
 
 function clean() {
-  resultado.innerHTML = ''
+  resultPainel.innerHTML = ''
 }
 
 function back() {
-  var result = resultado.innerHTML
+  let result = resultPainel.innerHTML
 
-  resultado.innerHTML = result.substring(0, result.length - 1)
+  resultPainel.innerHTML = result.substring(0, result.length - 1)
 }
 
 function calcular() {
-  var total = resultado.innerHTML
+  let total = resultPainel.innerHTML
 
   if (total) {
-    resultado.innerHTML = eval(total)
+    resultPainel.innerHTML = eval(total)
   } else {
-    resultado.innerHTML = '???'
+    resultPainel.innerHTML = '???'
   }
 }

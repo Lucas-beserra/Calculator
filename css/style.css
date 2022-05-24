@@ -1,56 +1,81 @@
-* {
-  margin: 0;
-  padding: 0;
+@media only screen and (max-width: 500px) {
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --backgroundColor: hsla(180, 25%, 25%, 0.8);
+  }
+  
+  main {
+    background: url('../img/numbers-5498036_1280.webp') center no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /* header {
+    background-color: var(--backgroundColor);
+    text-align: center;
+    width: 100vw;
+    padding: 15px 0 0;
+    color: #fff;
+  } */
+  
+  .calculator {
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem 0;
+    width: 50vw;
+    background-color: var(--backgroundColor);
+    border: 1px double;
+    border-radius: 5%;
+  }
+  
+  #resultPainel {
+    display: flex;
+    justify-content: end;
+    padding: 1px 3px;
+    margin: 6px 5px;
+    height: 40px;
+    font-size: 25px;
+    background-color: whitesmoke;
+    border: 1px double;
+    border-radius: 10px;
+  }
+  
+  table {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+  
+  .buttons {
+    font-size: 1.7rem;
+    width: 10vw;
+    height: 10vh;
+    margin: 0.2rem;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+  
+  #btnDelete {
+    width: 1.7rem;
+  }
+
+  .btnResult {
+    width: 22.5vw;
+    margin: 0.2rem;
+    border: 1px solid;
+    border-radius: 5px;
+  }
 }
 
-h1 {
-  border: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: white;
-}
-
-.main {
-  background-image: linear-gradient(45deg, black, cyan);
-  height: 100vh;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-}
-
-.calculator {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0.6rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 8%;
-}
-
-.buttons {
-  width: 30px;
-  height: 30px;
-  padding: 0.5rem;
-  margin: 0.1rem;
-  cursor: pointer;
-  border: 1px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.8);
-  background-color: whitesmoke;
-  border-radius: 5px;
-}
-
-.btnIgual {
-  height: 64px;
-}
-
-#resultado {
-  color: black;
-  background-color: white;
-  width: 130px;
-  height: 20px;
-  margin: 3.3px;
-  padding: 0.4rem 0.2rem;
-  text-align: right;
-  border-radius: 5px;
-}
